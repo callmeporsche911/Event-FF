@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "event.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/events",
+      "dest": "event.py"
+    },
+    {
+      "src": "/",
+      "dest": "event.py"
+    }
+  ]
+}
